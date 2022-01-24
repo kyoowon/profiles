@@ -6,8 +6,8 @@ export default function Topbar() {
             <div className="warpper">
                 <div className="left">
                     <a href="#intro" className="logo">kyulee</a>
+                    <div className="itemContainer"></div>
                 </div>
-                <h1>hel1o</h1>
                 <div className="right">
                     <h2>this is right</h2>
                 </div>
