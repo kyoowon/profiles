@@ -3,8 +3,26 @@
 .topBar {
     width: 100%;
     height: 70px;
-    background-color: $subColor1;
+    background-color: transparent;
+    color:  $subColor5;
     position:fixed;
     top: 0;
     z-index: 2;
+
+    .warpper {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+            .logo{
+                font-size: 40px;
+                font-weight: 700;
+                // delete hypertext style, color : same parent
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
 }
