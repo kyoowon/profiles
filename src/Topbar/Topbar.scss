@@ -16,6 +16,8 @@
         justify-content: space-between;
 
         .left{
+            display: flex;
+            align-items: center;
             .logo{
                 font-size: 40px;
                 font-weight: 700;
@@ -24,5 +26,32 @@
                 color: inherit;
             }
         }
+
+        .menu{
+            width: 30vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                float: left;
+                font-size: 30px;
+                a{
+                    font-size: 30px;
+                    font-weight: 700;
+                    // delete hypertext style, color : same parent
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+
+        .right {
+            cursor: pointer;
+        }
+    }
+
+    &.active {
+        color:black;
     }
 }
+

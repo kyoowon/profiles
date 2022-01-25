@@ -24,4 +24,8 @@
             scroll-snap-align: start;
         }
     }
+
+    &.active{
+        background-color: white;
+    }
 }
