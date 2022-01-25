@@ -3,6 +3,7 @@
 .app {
     height: 100vh;
     background-color: $mainColor;
+    transition: all 1s ease;
 
     .sections {
         width: 100%;
