@@ -1,5 +1,58 @@
 @import "../global.scss";
 
 .intro {
-    background-color: $subColor2;
+    // background-color: $subColor2;
+    display: flex;
+
+    .left {
+        flex: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .imgContainer {
+            width: 500px;
+            height: 500px;
+            background-color: wheat;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .right {
+        flex: 0.5;
+        background-image: url("../../public/assets/introbg.svg");
+        background-size: cover;
+        background-position: left;
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: 60px;
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 25px;
+
+                span {
+                    color: $subColor4;
+                }
+            }
+        }
+    }
 }

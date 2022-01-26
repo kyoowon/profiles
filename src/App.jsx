@@ -4,6 +4,7 @@ import "./App.scss"
 import Skill from "./Skill/Skill";
 import Portfolio from "./Portfolio/Portfolio";
 import { useState } from "react";
+import Career from "./Career/Career";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -14,6 +15,7 @@ function App() {
         <Intro />
         <Skill />
         <Portfolio />
+        <Career />
       </div>
     </div>
   );

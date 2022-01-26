@@ -4,7 +4,7 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 
 export default function Topbar({ darkMode, setDarkMode }) {
     return (
-        <div className={"topBar " + (darkMode && "dark_active ")}>
+        <div className={"topBar " + (darkMode && "darkActive ")}>
             <div className="warpper">
                 <div className="left">
                     <a href="#intro" className="logo">kyulee</a>
@@ -14,6 +14,7 @@ export default function Topbar({ darkMode, setDarkMode }) {
                         <li><a href="#intro">intro</a></li>
                         <li><a href="#skill">skill</a></li>
                         <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#career">career</a></li>
                     </ul>
                 </div>
                 <div className="right">
