@@ -8,7 +8,7 @@ export default function Intro() {
 
     useEffect(() => {
         console.log(textRef.current)
-        init(textRef.current, { showCursor: false, backDelay: 1400, backSpeed: 60, strings: ["Fontend", "React", "Web"] })
+        init(textRef.current, { showCursor: false, backDelay: 1400, backSpeed: 60, strings: ["Fontend", "React", "Web", "Junior Web"] })
     }, [])
     return (
         <div className="intro" id="intro">

@@ -13,8 +13,8 @@ function App() {
       <Topbar darkMode={darkMode} setDarkMode={setDarkMode}/>
       <div className="sections">
         <Intro />
-        <Skill />
         <Portfolio />
+        <Skill />
         <Career />
       </div>
     </div>

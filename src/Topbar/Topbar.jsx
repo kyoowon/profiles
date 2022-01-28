@@ -12,8 +12,8 @@ export default function Topbar({ darkMode, setDarkMode }) {
                 <div className="menuContainer">
                     <ul className="windowMenu">
                         <li><a href="#intro">intro</a></li>
-                        <li><a href="#skill">skill</a></li>
                         <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#skill">skill</a></li>
                         <li><a href="#career">career</a></li>
                     </ul>
                 </div>
