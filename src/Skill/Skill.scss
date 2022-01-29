@@ -1,7 +1,7 @@
 @import "../global.scss";
 
 .skill {
-    background-color: $subColor3;
+    // background-color: $subColor3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,26 +23,30 @@
 
     
     .slider{
-        height: 350px;
+        height: 450px;
         display: flex;
         position: absolute;
         left: 0;
         transition: all 1s ease-out;
-
+        
         .container{
             width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
 
+
             .item{
                 width: 700px;
-                height: 100%;
+                height: 90%;
                 background-color: white;
+                // border: 1px solid black;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                box-shadow: 0px 0px 15px -8px black;
+
 
                 .left{
                     flex: 4;
