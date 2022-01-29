@@ -1,9 +1,15 @@
 @import "../global.scss";
 
+
 .intro {
     // background-color: $subColor2;
     display: flex;
     pointer-events: none;
+
+    @include moblie{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .left {
         flex: 0.5;
@@ -20,6 +26,11 @@
             align-items: center;
             justify-content: center;
 
+            @include moblie{
+                width: 250px;
+                height: 250px;
+            }
+
             img {
                 height: 100%;
             }
@@ -28,6 +39,7 @@
 
     .right {
         flex: 0.5;
+        width: 100%;
         background-image: url("../../public/assets/introbg.svg");
         background-size: cover;
         background-position: left;
@@ -38,17 +50,32 @@
             flex-direction: column;
             justify-content: center;
 
+            @include moblie{
+                padding-left: 0;
+                align-items: center;
+            }
+
             h1 {
                 font-size: 60px;
                 margin: 10px 0;
+
+                @include moblie{
+                    font-size: 40px;
+                }
             }
 
             h2 {
                 font-size: 30px;
+                @include moblie{
+                    font-size: 20px;
+                }
             }
 
             h3 {
                 font-size: 25px;
+                @include moblie{
+                    font-size: 20px;
+                }
 
                 span {
                     color: $subColor4;

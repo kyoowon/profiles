@@ -29,11 +29,15 @@
         }
 
         .windowMenu {
-            width: 30vw;
+            width: 40vw;
             display: flex;
             padding: 0;
             justify-content: space-between;
             align-items: center;
+
+            @include moblie{
+                display: none;
+            }
 
             li {
                 float: left;

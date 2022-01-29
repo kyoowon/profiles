@@ -4,3 +4,12 @@ $subColor2 : #FF6F91;
 $subColor3 : #FF9671;
 $subColor4 : #FFC75F;
 $subColor5 : #F9F871;
+
+
+$width: 768px;
+
+@mixin  moblie {
+    @media (max-width: #{$width}){
+        @content
+    }
+}

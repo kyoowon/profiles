@@ -15,6 +15,7 @@ export default function Topbar({ darkMode, setDarkMode }) {
                         <li><a href="#portfolio">portfolio</a></li>
                         <li><a href="#skill">skill</a></li>
                         <li><a href="#career">career</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </div>
                 <div className="right">

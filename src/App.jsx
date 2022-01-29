@@ -5,6 +5,7 @@ import Skill from "./Skill/Skill";
 import Portfolio from "./Portfolio/Portfolio";
 import { useState } from "react";
 import Career from "./Career/Career";
+import Contact from "./Contact/Contact";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -16,6 +17,7 @@ function App() {
         <Portfolio />
         <Skill />
         <Career />
+        <Contact />
       </div>
     </div>
   );
