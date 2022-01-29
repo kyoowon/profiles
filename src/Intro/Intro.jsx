@@ -14,7 +14,7 @@ export default function Intro() {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="assets/profile_img.png" alt="user" />
+                    <img src={`${process.env.PUBLIC_URL}/assets/profile_img.png`} alt="user" />
                 </div>
             </div>
             <div className="right">

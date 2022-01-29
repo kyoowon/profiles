@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
+    position: relative;
 
     h1 {
         font-size: 50px;
@@ -68,6 +68,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                background-color: white;
                 z-index: 1;
             }
 
@@ -79,5 +80,25 @@
                 }
             }
         }
+    }
+    .custom-shape-divider-bottom-1643437846 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1643437846 svg {
+        position: relative;
+        display: block;
+        width: calc(134% + 1.3px);
+        height: 202px;
+    }
+    
+    .custom-shape-divider-bottom-1643437846 .shape-fill {
+        fill: #D65DB1;
     }
 }

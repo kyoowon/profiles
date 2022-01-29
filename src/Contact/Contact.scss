@@ -3,6 +3,8 @@
 .contact {
     position: relative;
     display: flex;
+    background-image: url("../../public/assets/circle.svg");
+    background-size: cover;
 
     @include moblie{
         flex-direction: column;
@@ -13,7 +15,7 @@
         overflow: hidden;
         flex: 1;
 
-        img {
+        .animations {
             height: 100%;
         }
 

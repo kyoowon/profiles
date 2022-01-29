@@ -1,17 +1,31 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Contact.scss"
+import lottie from "lottie-web";
+
+import astronaut from "../animations/astronaut.json";
+
 
 export default function Contact() {
 
+    const anime = useRef(null);
     const [message, setMessage] = useState(false);
-    const handleSubmit = (event) =>{
+    const handleSubmit = (event) => {
         event.preventDefault();
         setMessage(true);
     }
+    useEffect(() => {
+        lottie.loadAnimation({
+            container: anime.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: astronaut,
+        });
+    }, []);
     return (
         <div className="contact" id="contact">
             <div className="left">
-                <img src="https://via.placeholder.com/300" alt=""/>
+                <div className="animations" ref={anime}></div>
             </div>
             <div className="right">
                 <h2>Contact</h2>

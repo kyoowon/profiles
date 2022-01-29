@@ -2,8 +2,8 @@ export const webPortfolio = [
     {
         id: 1,
         title: "portfolio App",
-        img: "https://via.placeholder.com/150",
-        link: "https://github.com/kyoowon/Zoom-clone",
+        img: `${process.env.PUBLIC_URL}/assets/profiles.png`,
+        link: "https://github.com/kyoowon/profiles",
     },
     {
         id: 2,
