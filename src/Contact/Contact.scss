@@ -12,10 +12,11 @@
     }
 
     .left {
-        overflow: hidden;
         flex: 1;
 
         .animations {
+            overflow: hidden;
+
             height: 100%;
 
             @include moblie{
@@ -51,6 +52,10 @@
             align-items: center;
             justify-content: space-around;
 
+            @include moblie{
+                width: 100%;
+            }
+
             input {
                 width: 400px;
                 height: 30px;
@@ -61,6 +66,8 @@
 
                 @include moblie{
                     width: 250px;
+                    margin: 10px;
+
                 }
             }
 
@@ -75,6 +82,7 @@
                 @include moblie{
                     width: 250px;
                     height: 200px;
+                    margin: 30px;
                 }
                 
             }
