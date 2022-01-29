@@ -1,3 +1,6 @@
+import { useEffect, useRef } from "react";
+import shootingStar from "../animations/shootingstar.json";
+import lottie from "lottie-web";
 import "./Career.scss"
 
 
@@ -20,6 +23,16 @@ export default function Career() {
             degree: "2기 Cadet 활동",
         },
     ]
+    const anime = useRef (null);
+    useEffect(() => {
+        lottie.loadAnimation({
+            container: anime.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: shootingStar,
+        });
+    }, []);
 
     return (
         <div className="career" id="career">
@@ -48,6 +61,7 @@ export default function Career() {
                     </div>
                 ))}
             </div>
+            <div className="animations" ref={anime}></div>
         </div>
     )
 }

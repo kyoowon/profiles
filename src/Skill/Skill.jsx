@@ -3,12 +3,23 @@ import LanguageIcon from '@mui/icons-material/Language';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { webPortfolio } from "../data"
-import { useState } from "react";
+import starSkin from "../animations/star-skin.json";
+import lottie from "lottie-web";
+import { useRef, useState, useEffect } from "react";
 
 export default function Skill() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [projectData, setProjectData] = useState(webPortfolio);
-
+    const anime = useRef (null);
+    useEffect(() => {
+        lottie.loadAnimation({
+            container: anime.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: starSkin,
+        });
+    }, []);
     const handleClick = (way) =>{
         way === "left" 
         ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2) 
@@ -25,7 +36,7 @@ export default function Skill() {
                                     <span><LanguageIcon /></span>
                                     <h2>{d.title}</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius soluta obcaecati dolores error maxime ipsum laboriosam natus sequi numquam reprehenderit saepe, nulla alias dicta iusto laborum eos vel quasi ipsa!</p>
-                                    <a href={d.link}><strong>project</strong></a>
+                                    <a href={d.link}><strong>I want to see the project.</strong></a>
                                 </div>
                             </div>
                             <div className="right">
@@ -37,6 +48,7 @@ export default function Skill() {
             </div>
             <ArrowBackIosIcon className="arrowIcon left" fontSize="large" onClick={() =>handleClick("left")} />
             <ArrowForwardIosIcon className="arrowIcon right" fontSize="large" onClick={() =>handleClick("right")} />
+            <div className="animations" ref={anime}></div>
         </div>
     )
 }

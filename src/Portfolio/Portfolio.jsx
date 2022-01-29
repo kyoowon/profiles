@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import "./Portfolio.scss";
 import PortfolioList from "./PortfolioList/PortfolioList";
+import lottie from "lottie-web";
+import spaceship from "../animations/spaceship.json";
 import { webPortfolio, mobliePortfolio } from "../data"
 
 
@@ -21,7 +23,6 @@ export default function Portfolio() {
             title: "Moblie App",
         },
     ];
-
     useEffect(() => {
         switch (selected) {
             case "featured":
@@ -38,6 +39,16 @@ export default function Portfolio() {
                 break;
         }
     }, [selected]);
+    const anime = useRef(null);
+    useEffect(() => {
+        lottie.loadAnimation({
+            container: anime.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: spaceship,
+        });
+    }, []);
     return (
         <div className="portfolio" id="portfolio">
             <h1>portfolio</h1>
@@ -54,6 +65,7 @@ export default function Portfolio() {
                     </div>
                 ))}
             </div>
+            <div className="animations" ref={anime}></div>
             <div class="custom-shape-divider-bottom-1643437846">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>

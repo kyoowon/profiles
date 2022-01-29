@@ -17,6 +17,10 @@
 
         .animations {
             height: 100%;
+
+            @include moblie{
+                overflow: hidden;
+            }
         }
 
         @include moblie{

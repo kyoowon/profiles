@@ -7,12 +7,12 @@ import astronaut from "../animations/astronaut.json";
 
 export default function Contact() {
 
-    const anime = useRef(null);
     const [message, setMessage] = useState(false);
     const handleSubmit = (event) => {
         event.preventDefault();
         setMessage(true);
     }
+    const anime = useRef(null);
     useEffect(() => {
         lottie.loadAnimation({
             container: anime.current,

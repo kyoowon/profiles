@@ -2,17 +2,17 @@
 
 .skill {
     background: rgb(214, 93, 177);
-    background: linear-gradient(
-        180deg,
-        $subColor1 42%,
-        $subColor2 65%,
-        $subColor3 100%
-    );
-
+    background: linear-gradient(180deg, $subColor1 42%, $subColor2 65%, $subColor3 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
+
+    .animations {
+        position: absolute;
+        width: 80%;
+    }
 
     .arrowIcon {
         height: 50px;
@@ -33,6 +33,7 @@
     }
 
     .slider {
+        z-index: 1;
         height: 450px;
         display: flex;
         position: absolute;
