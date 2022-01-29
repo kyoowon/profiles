@@ -16,7 +16,7 @@
 
         .animations {
             overflow: hidden;
-
+            user-select: none;
             height: 100%;
 
             @include moblie{
