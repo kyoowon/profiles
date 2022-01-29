@@ -7,7 +7,6 @@ export default function Intro() {
     const textRef = useRef();
 
     useEffect(() => {
-        console.log(textRef.current)
         init(textRef.current, { showCursor: false, backDelay: 1400, backSpeed: 60, strings: ["Fontend", "React", "Web", "Junior Web"] })
     }, [])
     return (
