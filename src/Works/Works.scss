@@ -1,6 +1,6 @@
 @import "../global.scss";
 
-.skill {
+.works {
     background: rgb(214, 93, 177);
     background: linear-gradient(180deg, $subColor1 42%, $subColor2 65%, $subColor3 100%);
     display: flex;
@@ -80,7 +80,7 @@
 
                     .leftContainer {
                         width: 90%;
-                        height: 70%;
+                        height: 80%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
@@ -116,11 +116,20 @@
                         p {
                             font-size: 13px;
                         }
-                        a {
-                            font-size: 12px;
-                            font-weight: 600;
-                            text-decoration: none;
-                            cursor: pointer;
+
+                        .icon{
+                            display: flex;
+
+                            img{
+                                width: 30px;
+                                height: 30px;
+                                margin: 5px;
+                                border-radius: 50%;
+
+                                &:hover{
+                                    background-color: $subColor5;
+                                }
+                            }
                         }
                     }
                 }

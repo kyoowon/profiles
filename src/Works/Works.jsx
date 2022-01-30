@@ -1,4 +1,4 @@
-import "./Skill.scss"
+import "./Works.scss"
 import LanguageIcon from '@mui/icons-material/Language';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
@@ -7,7 +7,7 @@ import starSkin from "../animations/star-skin.json";
 import lottie from "lottie-web";
 import { useRef, useState, useEffect } from "react";
 
-export default function Skill() {
+export default function Works() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [projectData, setProjectData] = useState(webPortfolio);
     const anime = useRef (null);
@@ -26,7 +26,7 @@ export default function Skill() {
         : setCurrentSlide(currentSlide < projectData.length - 1 ? currentSlide + 1 : 0)
     }
     return (
-        <div className="skill" id="skill">
+        <div className="works" id="works">
             <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
                 {projectData.map(d => (
                     <div className="container">
@@ -36,7 +36,11 @@ export default function Skill() {
                                     <span><LanguageIcon /></span>
                                     <h2>{d.title}</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius soluta obcaecati dolores error maxime ipsum laboriosam natus sequi numquam reprehenderit saepe, nulla alias dicta iusto laborum eos vel quasi ipsa!</p>
-                                    <a href={d.link}><strong>I want to see the project.</strong></a>
+                                    <div className="icon">
+                                        <a href={d.github}><img src={`${process.env.PUBLIC_URL}/assets/githubicon.png`}/></a>
+                                        <a href={d.notion}><img src={`${process.env.PUBLIC_URL}/assets/notionsicon.png`}/></a>
+                                        <a href={d.link}><img src={`${process.env.PUBLIC_URL}/assets/pageicon.png`}/></a>
+                                    </div>
                                 </div>
                             </div>
                             <div className="right">

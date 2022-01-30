@@ -1,11 +1,11 @@
 import Intro from "./Intro/Intro";
 import Topbar from "./Topbar/Topbar";
 import "./App.scss"
-import Skill from "./Skill/Skill";
 import Portfolio from "./Portfolio/Portfolio";
 import { useState } from "react";
 import Career from "./Career/Career";
 import Contact from "./Contact/Contact";
+import Works from "./Works/Works";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,7 +15,7 @@ function App() {
       <div className="sections">
         <Intro />
         <Portfolio />
-        <Skill />
+        <Works />
         <Career />
         <Contact />
       </div>
