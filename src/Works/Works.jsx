@@ -2,14 +2,14 @@ import "./Works.scss"
 import LanguageIcon from '@mui/icons-material/Language';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { webPortfolio } from "../data"
+import { featuredPortfolio } from "../data"
 import starSkin from "../animations/star-skin.json";
 import lottie from "lottie-web";
 import { useRef, useState, useEffect } from "react";
 
 export default function Works() {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [projectData, setProjectData] = useState(webPortfolio);
+    const [projectData, setProjectData] = useState(featuredPortfolio);
     const anime = useRef (null);
     useEffect(() => {
         lottie.loadAnimation({

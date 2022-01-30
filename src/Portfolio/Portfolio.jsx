@@ -3,7 +3,7 @@ import "./Portfolio.scss";
 import PortfolioList from "./PortfolioList/PortfolioList";
 import lottie from "lottie-web";
 import spaceship from "../animations/spaceship.json";
-import { webPortfolio, mobliePortfolio } from "../data"
+import { featuredPortfolio ,webPortfolio, mobliePortfolio } from "../data"
 
 
 export default function Portfolio() {
@@ -26,7 +26,7 @@ export default function Portfolio() {
     useEffect(() => {
         switch (selected) {
             case "featured":
-                setData(webPortfolio)
+                setData(featuredPortfolio);
                 break;
             case "web":
                 setData(webPortfolio);
