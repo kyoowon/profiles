@@ -1,5 +1,5 @@
-import { useRef, useEffect, useState } from "react";
 import "./Portfolio.scss";
+import { useRef, useEffect, useState } from "react";
 import PortfolioList from "./PortfolioList/PortfolioList";
 import lottie from "lottie-web";
 import spaceship from "../animations/spaceship.json";
