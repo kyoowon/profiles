@@ -1,16 +1,28 @@
 import { useEffect, useRef, useState } from "react";
 import "./Contact.scss"
 import lottie from "lottie-web";
+import emailjs from '@emailjs/browser';
 
 import astronaut from "../animations/astronaut.json";
 
 
 export default function Contact() {
-
-    const [message, setMessage] = useState(false);
+    const [sendMessage, setSendMessage] = useState(false);
+    const [values, setValues] = useState({});
+    const handleOnchange  = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setValues({...values, [name] : value});
+        console.log(values)
+    }
     const handleSubmit = (event) => {
         event.preventDefault();
-        setMessage(true);
+        console.log(values)
+        emailjs.sendForm( 'profilesContact', 'template_4lttl7f', values, 'user_DsgN3yjkrX5NTveVADLtC').then(() => {
+            setSendMessage(true)
+        }, (err) => {
+            console.log('FAILED...', err);
+         });
     }
     const anime = useRef(null);
     useEffect(() => {
@@ -30,10 +42,11 @@ export default function Contact() {
             <div className="right">
                 <h2>Contact</h2>
                 <form onSubmit={handleSubmit}>
-                    <input text="text" placeholder="Email" />
-                    <textarea placeholder="Message"></textarea>
+                    <input name="user_name" text="text" placeholder="Name" onChange={handleOnchange} />
+                    <input name="user_email" text="text" placeholder="Email" onChange={handleOnchange}/>
+                    <textarea name="message" placeholder="Message" onChange={handleOnchange}></textarea>
                     <button type="submit">Send</button>
-                    {message && <span>Thanks, I'll reply ASAP 😊</span>}
+                    {sendMessage && <span>Thanks, I'll reply ASAP 😊</span>}
                 </form>
             </div>
             <footer>&copy; Copyright 2022 kyulee</footer>
