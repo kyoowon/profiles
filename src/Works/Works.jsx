@@ -35,7 +35,7 @@ export default function Works() {
                                 <div className="leftContainer">
                                     <span><LanguageIcon /></span>
                                     <h2>{d.title}</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius soluta obcaecati dolores error maxime ipsum laboriosam natus sequi numquam reprehenderit saepe, nulla alias dicta iusto laborum eos vel quasi ipsa!</p>
+                                    <p>{d.desc}</p>
                                     <div className="icon">
                                         <a href={d.github}><img src={`${process.env.PUBLIC_URL}/assets/githubicon.png`}/></a>
                                         <a href={d.notion}><img src={`${process.env.PUBLIC_URL}/assets/notionsicon.png`}/></a>
