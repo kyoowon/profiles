@@ -8,21 +8,19 @@ import astronaut from "../animations/astronaut.json";
 
 export default function Contact() {
     const [sendMessage, setSendMessage] = useState(false);
-    const [values, setValues] = useState({});
-    const handleOnchange  = (event) => {
-        const name = event.target.name;
-        const value = event.target.value;
-        setValues({...values, [name] : value});
-        console.log(values)
-    }
+    const form = useRef();
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(values)
-        emailjs.sendForm( 'profilesContact', 'template_4lttl7f', values, 'user_DsgN3yjkrX5NTveVADLtC').then(() => {
-            setSendMessage(true)
-        }, (err) => {
-            console.log('FAILED...', err);
-         });
+        console.log(event.target)
+        emailjs.sendForm('profilesContact', 'template_ty2yt3n', form.current, 'user_DsgN3yjkrX5NTveVADLtC')
+      .then((result) => {
+          console.log(result.text);
+          setSendMessage(true)
+      }, (error) => {
+          console.log(error.text);
+      });
+
+
     }
     const anime = useRef(null);
     useEffect(() => {
@@ -41,10 +39,10 @@ export default function Contact() {
             </div>
             <div className="right">
                 <h2>Contact</h2>
-                <form onSubmit={handleSubmit}>
-                    <input name="user_name" text="text" placeholder="Name" onChange={handleOnchange} />
-                    <input name="user_email" text="text" placeholder="Email" onChange={handleOnchange}/>
-                    <textarea name="message" placeholder="Message" onChange={handleOnchange}></textarea>
+                <form ref={form} onSubmit={handleSubmit}>
+                    <input name="user_name" text="text" placeholder="Name" />
+                    <input name="user_email" text="text" placeholder="Email"/>
+                    <textarea name="message" placeholder="Message"></textarea>
                     <button type="submit">Send</button>
                     {sendMessage && <span>Thanks, I'll reply ASAP 😊</span>}
                 </form>
