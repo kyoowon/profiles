@@ -135,6 +135,11 @@
                                     background-color: $subColor5;
                                 }
                             }
+                            @include moblie {
+                                flex-direction: column;
+                                position: absolute;
+                                right: 40px;
+                            }
                         }
                     }
                 }

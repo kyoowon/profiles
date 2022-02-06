@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+.DesktopMenu {
+    width: 40vw;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+
+    @include moblie{
+        display: none;
+    }
+
+    li {
+        float: left;
+        a {
+            font-size: 30px;
+            // delete hypertext style, color : same parent
+            text-decoration: none;
+            color: inherit;
+        }
+        &:hover {
+            font-weight: 700;
+            color: $subColor4;
+        }
+    }
+}

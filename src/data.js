@@ -6,7 +6,7 @@ export const featuredPortfolio =[
         link: "https://kyoowon.github.io/profiles/",
         github: "https://github.com/kyoowon/profiles",
         notion: "https://rocky-goal-e68.notion.site/profiles-f097de3d10874dfc8f65029e1e1bd17b",
-        desc: ["react js에 대한 기초 활용 (CRA).", "github.io를 활용한 정적 페이지 배포.", "lottiefiles를 활용한 animation.", "email.js를 활요한 contact page."],
+        desc: ["react js에 대한 기초 활용 (CRA).", "github.io를 활용한 정적 페이지 배포.", "lottiefiles를 활용한 animation.", "email.js를 활요한 contact page.", "responsible web desgin."],
     },
     {
         id: 2,
