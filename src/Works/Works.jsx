@@ -35,7 +35,11 @@ export default function Works() {
                                 <div className="leftContainer">
                                     <span><LanguageIcon /></span>
                                     <h2>{d.title}</h2>
-                                    <p>{d.desc}</p>
+                                    <ul>
+                                        {d.desc.map(description => (
+                                            <li>{description}</li>
+                                        ))}
+                                    </ul>
                                     <div className="icon">
                                         <a href={d.github}><img src={`${process.env.PUBLIC_URL}/assets/githubicon.png`}/></a>
                                         <a href={d.notion}><img src={`${process.env.PUBLIC_URL}/assets/notionsicon.png`}/></a>
