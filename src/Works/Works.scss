@@ -43,7 +43,7 @@
         transition: all 1s ease-out;
 
         @include moblie {
-            height: 80vh;
+            height: 90vh;
             flex-direction: column;
             justify-content: center;
         }
@@ -53,6 +53,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include moblie {
+                overflow: hidden;
+            }
 
             .item {
                 width: 700px;
@@ -67,7 +71,7 @@
 
                 @include moblie {
                     width: 90%;
-                    height: 150px;
+                    height: 145px;
                     margin: 5px 0;
                 }
 
