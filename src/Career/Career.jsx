@@ -10,7 +10,7 @@ export default function Career() {
             id: 1,
             title: "Chungbuk University",
             img: "https://www.chungbuk.ac.kr/resource/DATA/board/201304/E91C01365489275602.png",
-            desc: "충북대학교에서 소프트웨어학과를 수료하면서 Computer Science에 대한 이론을 학습하고 개발에 필요한 전반적인 문서화 과정을 비롯해 창업에 대한 내용까지 학습하였다.",
+            desc: "충북대학교에서 소프트웨어학과를 수료하면서 Computer Science에 대한 이론을 학습하고 개발에 필요한 전반적인 문서로 만드는 과정을 비롯해 개발, 이를 활용한 창업에 관한 내용까지 학습하였다.",
             period: "2015.03 ~ 2022.02",
             degree: "도시공학 & 소프트웨어학과 복수전공 학사 수료 "
         },
@@ -18,7 +18,7 @@ export default function Career() {
             id: 2,
             title: "42 Seoul",
             img: "https://apply.42seoul.kr/uploads/admissions/campus/logo_website/18/logo42.svg",
-            desc: "서울시과 과기부에서 진행하는 이노베이션 아카데미의 42Seoul 과정을 통해 주도적인 학습과 동료들간의 소통을 통한 코드 리뷰, 동료학습에 대한 방법 등을 학습하였다.",
+            desc: "서울시와 과학기술정보통신부에서 진행하는 이노베이션 아카데미의 42Seoul 과정을 통해 자기 주도적인 학습과 동료들 간의 소통을 통한 코드 리뷰, 동료학습에 대한 방법 등을 학습하였다.",
             period: "2020.09 ~ 2021.09",
             degree: "2기 Cadet 활동",
         },
