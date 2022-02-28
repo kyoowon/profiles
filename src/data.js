@@ -22,7 +22,7 @@ export const featuredPortfolio =[
         img: `${process.env.PUBLIC_URL}/assets/koom.png`,
         link: "https://codesandbox.io/s/zoom-clonefinalchellenge-40rc6",
         github: "https://github.com/kyoowon/Zoom-clone",
-        notion: "https://rocky-goal-e68.notion.site/profiles-f097de3d10874dfc8f65029e1e1bd17b",
+        notion: "https://www.notion.so/Clone-coding-Zoom-82237f3afec24640b39d5c2768fd086b",
         desc: ["WebSocket에 대한 이해", "WebRTC를 통한 PtoP 통신.", "Node.js를 통한 서버 개발."],
     },
     {
@@ -59,7 +59,7 @@ export const webPortfolio = [
         img: `${process.env.PUBLIC_URL}/assets/koom.png`,
         link: "https://codesandbox.io/s/zoom-clonefinalchellenge-40rc6",
         github: "https://github.com/kyoowon/Zoom-clone",
-        notion: "https://rocky-goal-e68.notion.site/profiles-f097de3d10874dfc8f65029e1e1bd17b",
+        notion: "https://www.notion.so/Clone-coding-Zoom-82237f3afec24640b39d5c2768fd086b",
         desc: ["WebSocket에 대한 이해", "WebRTC를 통한 PtoP 통신.", "Node.js를 통한 서버 개발."],
     },
 ]
