@@ -19,10 +19,11 @@ export const featuredPortfolio =[
     {
         id: 3,
         title: "Zoom clone App",
-        img: "https://via.placeholder.com/150",
+        img: `${process.env.PUBLIC_URL}/assets/koom.png`,
+        link: "https://codesandbox.io/s/zoom-clonefinalchellenge-40rc6",
         github: "https://github.com/kyoowon/Zoom-clone",
         notion: "https://rocky-goal-e68.notion.site/profiles-f097de3d10874dfc8f65029e1e1bd17b",
-        desc: ["React.js에 대한 기초를 기반", "github.io 정적 페이지 배포.", "lottiefiles - animation.", "email.js - contact page"],
+        desc: ["WebSocket에 대한 이해", "WebRTC를 통한 PtoP 통신.", "Node.js를 통한 서버 개발."],
     },
     {
         id: 4,
@@ -30,7 +31,7 @@ export const featuredPortfolio =[
         img: `${process.env.PUBLIC_URL}/assets/stopandflight.png`,
         github: "https://github.com/CBNU-DoReMiFa/stop_and_flight",
         notion: "https://rocky-goal-e68.notion.site/Android-app-STOP-and-Flight-0e84b91c08984610a35da153db38baa7",
-        desc: ["github를 활용한 프로젝트 형상관리.", "firebase - serverless", "android Studio native app kit", "lottiefiles - animation."],
+        desc: ["github를 활용한 프로젝트 형상관리.", "android Studio native app kit","firebase - serverless", "lottiefiles - animation.", "App개발을 통한 디자인 패턴 학습 ( MVC, MVVM )"],
     }
 ]
 
@@ -55,10 +56,11 @@ export const webPortfolio = [
     {
         id: 3,
         title: "Zoom clone App",
-        img: "https://via.placeholder.com/150",
+        img: `${process.env.PUBLIC_URL}/assets/koom.png`,
+        link: "https://codesandbox.io/s/zoom-clonefinalchellenge-40rc6",
         github: "https://github.com/kyoowon/Zoom-clone",
         notion: "https://rocky-goal-e68.notion.site/profiles-f097de3d10874dfc8f65029e1e1bd17b",
-        desc: ["React.js에 대한 기초를 기반", "github.io 정적 페이지 배포.", "lottiefiles - animation.", "email.js - contact page"],
+        desc: ["WebSocket에 대한 이해", "WebRTC를 통한 PtoP 통신.", "Node.js를 통한 서버 개발."],
     },
 ]
 
@@ -69,6 +71,6 @@ export const mobliePortfolio = [
         img: `${process.env.PUBLIC_URL}/assets/stopandflight.png`,
         github: "https://github.com/CBNU-DoReMiFa/stop_and_flight",
         notion: "https://rocky-goal-e68.notion.site/Android-app-STOP-and-Flight-0e84b91c08984610a35da153db38baa7",
-        desc: ["github를 활용한 프로젝트 형상관리.", "android Studio native app kit","firebase - serverless", "lottiefiles - animation."],
+        desc: ["github를 활용한 프로젝트 형상관리.", "android Studio native app kit","firebase - serverless", "lottiefiles - animation.", "App개발을 통한 디자인 패턴 학습 ( MVC, MVVM )"],
     }
 ]
